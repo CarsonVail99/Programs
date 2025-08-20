@@ -17,8 +17,11 @@ class encryption:
         password_length = len(password)
         encrypted_chars = ''.join(random.choice(self.all_char) for i in range(password_length))
         self.encrypted_parts = list(encrypted_chars)
-        self.encrypted_password =(password.union(set(self.encrypted_parts)))
-        print(f'Your encrypted password is: {self.encrypted_password}')
+        self.encrypted_password = (password.union(set(self.encrypted_parts)))
+        encrypted_password_list = list(self.encrypted_password)
+        encrypted_password_list = ''.join(self.encrypted_password)
+
+        print(f'Your encrypted password is: {encrypted_password_list}')
         return self.encrypted_password, self.encrypted_parts
 
 
@@ -28,6 +31,8 @@ class encryption:
             return None
         else:
             decrypted_password = encrypted_password.difference(set(encrypted_parts))
+            decrypted_password = list(decrypted_password)
+            decrypted_password = ''.join(decrypted_password)
             print(f'Your decrypted password is: {decrypted_password}')
             return decrypted_password
 

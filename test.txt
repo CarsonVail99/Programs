@@ -1,0 +1,8 @@
+Books(The Unknown Universe, Someone, 341, Non-Fiction)
+Books(The Hunger Games, Suzanne Collins, 486, Fiction)
+Books(Pride and Prejudice, Jane Austen, 284, Historic Fiction)
+Books(How to kill a Mockingbird, Harper Lee, 679, Fiction)
+Books(Harry Potter, JRR Rowlings, 245, Fantasy)
+Books(The Book Thief, Markus Zusak, 444, Fiction)
+Books(The Hobbit, JRR Tolkien, 873, Fiction)
+Books(Something special, There, 54321, Historical fiction)

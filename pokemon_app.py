@@ -2,28 +2,7 @@ import requests
 import random
 import time
 
-# base_url = 'https://pokeapi.co/api/v2/'
-#
-# def get_pokemon_info(name):
-#     url = f'{base_url}/pokemon/{name}'
-#     response = requests.get(url) #.requests 200 == good, 404 == bad
-#     if response.status_code == 200:
-#         pokemon_data = response.json()
-#         return pokemon_data
-#     else:
-#         print(f'Failed to retrieve data{response.status_code}')
-#
-#
-# pokemon_name = input('Enter the pokemon name:')
-# pokemon_info = get_pokemon_info(name=pokemon_name)
-# if pokemon_info:
-#     # print(f'{pokemon_info}')
-#     print(f'Pokemon name: {pokemon_info['name']}')
-#     print(f'Pokemon weight: {pokemon_info['weight']}')
-#     print(f'Pokemon height: {pokemon_info['height']}')
-#     print(f'Pokemon type:{pokemon_info['types'][0]['type']['name']}')
 
-# -----------------------------------------------------------------------
 def get_pokemon_stats(random_pokemon):
     url = 'https://pokeapi.co/api/v2/pokemon/'
     print('----------Welcome to the Pokemon Stats App----------')

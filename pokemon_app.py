@@ -23,7 +23,9 @@ def get_pokemon_stats(random_pokemon):
 
 
 def display_pokemon_info(pokemon_info):
-    print(f'Pokemon Name:{pokemon_info["name"]}')
+    #Pokémon name
+    pokemon_name = str(pokemon_info['name']).capitalize()
+    print(f'Pokemon Name:{pokemon_name}')
     print(f'Pokemon Weight:{pokemon_info['weight']}')
     print(f'Pokemon Height:{pokemon_info['height']}')
     print(f'Pokemon Base Experience:{pokemon_info['base_experience']}')
@@ -36,11 +38,10 @@ def display_pokemon_info(pokemon_info):
     print(f'Pokemon Weakness:{weakness}')
     #Pokémon abilities
     if len(pokemon_info['abilities']) > 0:
-        ability1 = {pokemon_info['abilities'][0]['ability']['name']}
+        ability1 = str(pokemon_info['abilities'][0]['ability']['name']).capitalize()
         print(f'Pokemon Ability 1:{ability1}')
-
         if len(pokemon_info['abilities']) > 1:
-            ability2 = {pokemon_info['abilities'][1]['ability']['name']}
+            ability2 = str(pokemon_info['abilities'][1]['ability']['name']).capitalize()
             print(f'Pokemon Ability 2:{ability2}')
         else:
             print('Pokemon Ability 2:None')

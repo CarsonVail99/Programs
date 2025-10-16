@@ -1,8 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QVBoxLayout, QLabel, QMainWindow, QLineEdit
 import datetime
-from PyQt5.QtGui import QIcon, QFont
-
+from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QVBoxLayout, QLabel, QMainWindow, QLineEdit
+from PyQt5.QtGui import QFont, QPixmap
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -46,7 +45,7 @@ class Window(QMainWindow):
         resemblance = self.line_edit2.text()
         time = datetime.datetime.now()
         with open('log.txt', 'a') as file:
-            file.write(f'{time}\n{message} - {resemblance}')
+            file.write(f'{time}\n{message} - {resemblance}\n')
         self.line_edit1.clear()
         self.line_edit2.clear()
 
